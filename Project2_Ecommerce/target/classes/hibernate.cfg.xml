@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://project2.cvxeg4xjr4pz.us-west-1.rds.amazonaws.com/postgres</property>
+        <property name="hibernate.connection.username">project2</property>
+        <property name="hibernate.connection.password">project2</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hbm2ddl.auto">update</property>
+
+        <mapping class="com.revature.project2.pojo.Customer" />
+        
+    </session-factory>
+</hibernate-configuration>
